@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Desafio clase 8</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="fs-1 text-primary">Carga de productos</div>
+        <form action="/api/productos" method="post">
+            <div class="mb-3">
+                <label for="title" class="form-label">Titulo</label>
+                <input type="text" class="form-control" name="title" id="title" aria-describedby="titleHelp">
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Precio</label>
+                <input type="number" class="form-control" name="price" id="price" aria-describedby="priceHelp">
+            </div>
+            <div class="mb-3">
+                <label for="thumbnail" class="form-label">URL imagen</label>
+                <input type="url" class="form-control" name="thumbnail" id="thumbnail" aria-describedby="thumbnailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
